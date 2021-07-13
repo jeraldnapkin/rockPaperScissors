@@ -20,7 +20,7 @@ function computerPlay() {
 
 // Declaring winner function
 
-function winner (playerSelection,computer) {
+function winner(playerSelection,computer) {
 
     if (playerSelection === 'rock' && computer === 'scissors') {
         return 'You win!'
@@ -34,6 +34,15 @@ function winner (playerSelection,computer) {
         return 'You lose!'
     }   
 }
+let user_score = 0 ;
+let pc_score = 0;
+let score = 0;
+let round = 0;
+
+
+
+
+
 
 // Recalling functions and generating user input
 
@@ -43,8 +52,26 @@ function game() {
     playerSelection = playerSelection.toLowerCase();
     console.log(`Computer selected: ${computer}`);
     console.log(`Player selected: ${playerSelection}`)
-    win = console.log(winner(playerSelection,computer))
+    win = winner(playerSelection,computer);
+
+    if (win === 'You win!') {
+        user_score++;
+    } else if (win === 'You lose!') {
+        pc_score++;
+    } else {
+        round++;
+    }
+
+    console.log(win)
+    console.log('Your score is: ' + user_score)
+    console.log('Computer score is: ' + pc_score)
+    
+    
 }
 
 
 game();
+
+
+
+console.log(user_score)
