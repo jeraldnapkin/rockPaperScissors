@@ -1,0 +1,63 @@
+html {
+    font-size: 10px;
+    background: url("./pictures/background.png") ;
+    background-size: cover;
+    
+  }
+
+body,html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+
+  h1 {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    /*min-height: 20vh;*/
+}
+
+.buttons :hover {
+    transform:scale(1.1);
+    border-color: white;
+    box-shadow: 0px 0px 10px white;
+    cursor:pointer;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+ 
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+button {
+  border: .4rem solid black;
+  border-radius: 1rem;
+  margin: 1rem 2rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 12rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem black;
+}
