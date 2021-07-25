@@ -4,17 +4,27 @@
   <title>Rock Paper Scissors
   </title>
   <meta charset="UTF-8"/>
- <!--- <script src="script.js"></script> -->
+<script src="script.js" defer></script>
   <link rel = "stylesheet" href="style.css">
 </head>
 <body>
   <h1>Choose your weapon</h1>
   <div class = "buttons">
-  <button>Rock</button>
-  <button>Paper</button>
-  <button>Scissors</button>
+  <button id="btn-1">Rock</button>
+  <button id="btn-2">Paper</button>
+  <button id="btn-3">Scissors</button>
   </div>
     
+
+  <div>
+    <h2 class="results">Results</h2>
+    <h3 class= "computerSel">Computer selected: Nothing yet!</h3>
+    <h3 class= "playerSel">Player selected: Nothing yet!</h3>
+    <h3 class = "round">Current round: 0</h3>
+    <h3 class = "computerScore">Computer Score: 0</h3>
+    <h3 class ="playerScore">Player Score: 0</h3>
+    <h4 class = "info"></h4>
+  </div>
 
 </body>
 </html>
